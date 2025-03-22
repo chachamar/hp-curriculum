@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- org css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>テックアイエス Contact</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="#">
+                <img src="img/logo.png" alt="会社ロゴ" class="header-logo">
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#">Service</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="contact.html"><i class="fas fa-file-signature"></i>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--ハンバーガーボタン-->
+            <div id="btn" class="hamburger__btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="menu" class="menu-sp">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="contact.html"><i class="fas fa-file-signature"></i>Contact</a></li>
+            </ul>
+            <div id="modal" class="modal-sp"></div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="contact-form__header">
+                <img src="img/contact_page.png" alt="Contact画像">
+                <div class="contact-form__title">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contact-form">
+                <h1>お問い合わせフォーム</h1>
+                <form action="#" method="post">
+                  <!-- 名前 -->
+                  <div class="form-group">
+                    <label for="your-name">お名前<span class="required">必須</span></label>
+                    <input type="text" id="your-name" name="your-name" required>
+                  </div>
+                  <!-- メールアドレス -->
+                  <div class="form-group">
+                    <label for="your-email">メールアドレス<span class="required">必須</span></label>
+                    <input type="email" id="your-email" name="your-email"  required>
+                  </div>
+                  <!-- お問い合わせ内容 -->
+                  <div class="form-group">
+                    <label for="your-message">お問い合わせ内容<span class="required">必須</span></label>
+                    <textarea id="your-message" name="your-message"  rows="5" required></textarea>
+                  </div>
+                  <!-- 送信ボタン -->
+                  <div class="form-group__btn">
+                    <input type="submit" value="送信">
+                  </div>
+                </form>
+              </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright TECHI.S.,Inc.</p>
+    </footer>
+
+  <!-- JavaScriptファイルの読み込み -->
+    <script src="./hamburger.js"></script>
+</body>
+
+</html>
